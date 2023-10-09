@@ -75,7 +75,7 @@ header {
     border-radius: 6px;
     background: #6c53cd;
     padding: 8px 16px;
-    min-width: 150px;
+    width: 150px;
     color: white;
     margin-right: 5px;
 }
@@ -84,8 +84,7 @@ header {
     border-radius: 6px;
     background: #dddce2;
     padding: 8px 16px;
-    min-width: 150px;
-
+    width: 150px;
     margin-right: 5px;
 }
 

@@ -284,7 +284,7 @@
 
             <div style="height: 100px"></div>
 
-            <div class="gridTeilnehmer">
+            <div id="teilnehmer" class="gridTeilnehmer">
                 <div class="gridTeilnehmerItem">
                     <div class="gridTeilnehmerItemPic">
                         <img
@@ -399,6 +399,12 @@
                         Komische Oper, Berlin
                     </div>
                 </div>
+            </div>
+            <div
+                class="gridTeilnehmer"
+                style="margin-top: 50px; display: none"
+                id="alleTeilnhemer"
+            >
                 <div class="gridTeilnehmerItem">
                     <div class="gridTeilnehmerItemPic">
                         <img
@@ -485,7 +491,20 @@
                 </div>
             </div>
             <div style="margin-top: 40px">
-                <a class="buttonLila">Alle Referent:innen</a>
+                <a
+                    id="SMalleTeilnhemer"
+                    onclick="showMoreGrid('alleTeilnhemer')"
+                    class="buttonLila"
+                    >Alle Teilnehmer:innen</a
+                >
+                <a
+                    href="#teilnehmer"
+                    id="SLalleTeilnhemer"
+                    onclick="showLess('alleTeilnhemer')"
+                    class="buttonLila"
+                    style="display: none"
+                    >Weniger Teilnehmer:innen</a
+                >
             </div>
 
             <div style="height: 200px"></div>
