@@ -1,0 +1,579 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+header {
+  padding: 16px 120px 17px 120px;
+}
+
+.header {
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.headerItem {
+  color: #252330;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  margin-left: 54px;
+}
+
+.headerItemEnd {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+.End {
+  position: absolute;
+  right: 120px;
+  top: 18px;
+  color: #fff;
+  border-radius: 6px;
+  padding: 5.5px 12px 5.5px 11px;
+  background: #6c53cd;
+}
+
+.ZukunftJetzt {
+  background-image: url("src/ZukunftJetzt.png");
+  width: 600px;
+  height: 80px;
+  margin: 30px;
+}
+
+.MainHeadline {
+  color: #595073;
+
+  text-align: center;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px; /* 120% */
+  max-width: 1200px;
+}
+
+.MainSubHeader {
+  width: 859px;
+  color: #252330;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 150% */
+}
+
+.buttonLila {
+  border-radius: 6px;
+  background: #6c53cd;
+  padding: 8px 16px;
+  min-width: 150px;
+  color: white;
+  margin-right: 5px;
+}
+
+.buttonGrau {
+  border-radius: 6px;
+  background: #dddce2;
+  padding: 8px 16px;
+  min-width: 150px;
+
+  margin-right: 5px;
+}
+
+.startKongress {
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43.2px; /* 120% */
+  color: #595073;
+}
+
+.counter {
+  margin-top: 20px;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+
+.counter-item {
+  background: #6c53cd;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.bilder {
+  background-image: url("src/bild1.png");
+  width: 1200px;
+  height: 250px;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.bilder2 {
+  background-image: url("src/bild2.png");
+  width: 1200px;
+  height: 250px;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.bilder3 {
+  background-image: url("src/bild3.png");
+  width: 1200px;
+  height: 250px;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.bildButton {
+  position: relative;
+  bottom: -200px;
+}
+
+.gridCompLogo {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 25px;
+  margin-top: 30px;
+  max-width: 1200px;
+}
+
+.gridZeitplann {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+  margin-top: 30px;
+  max-width: 1200px;
+}
+
+.gridZeitplannItemGrau {
+  border-radius: 6px;
+  background: #dddce2;
+  height: 62px;
+  color: #6c53cd;
+  font-size: 25px;
+  font-weight: 550;
+  display: flex;
+  justify-content: left;
+  padding-left: 15px;
+
+  align-items: center;
+}
+
+.gridZeitplannItemLila {
+  border-radius: 6px;
+  background: #6c53cd;
+  height: 62px;
+  color: #fbfaff;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  justify-content: left;
+  padding-left: 15px;
+  align-items: center;
+}
+
+.gridZeitplannItemLilaTime {
+  margin-left: auto;
+  padding-right: 15px;
+}
+
+.BekannteReferenten {
+  text-align: left;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43.2px; /* 120% */
+  color: #595073;
+}
+
+.gridRef {
+  display: grid;
+  grid-template-columns: repeat(2, 550px);
+  grid-gap: 50px;
+  max-width: 1200px;
+}
+
+.gridRefItem {
+  width: 100%;
+}
+
+.gridRefItemPic {
+  width: 400px;
+  position: relative;
+  top: -64px;
+  left: -80px;
+}
+
+.gridRefItemPicBack {
+  background-color: #c6bbf3;
+  width: 550px;
+  height: 160px;
+  border-radius: 16px;
+}
+
+.gridRefItemKey {
+  border-color: #6c53cd;
+  border: solid 1px;
+  color: #6c53cd;
+  border-radius: 16px;
+  padding: 6px 40px;
+  font-size: 13px;
+  background: #f7f7f7;
+  height: 16px;
+}
+
+.gridRefItemHeadline {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28.8px; /* 120% */
+  color: #6c53cd;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.gridRefItemName {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19.2px; /* 120% */
+  color: #252330;
+  text-align: left;
+  margin-left: 150px;
+}
+
+.gridRefItemPosition {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.8px; /* 120% */
+  color: #000;
+  margin-left: 150px;
+  text-align: left;
+}
+
+.gridRefItemComp {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.8px; /* 120% */
+  color: #000;
+  text-align: left;
+  margin-left: 150px;
+  opacity: 0.5;
+}
+
+.gridTeilnehmer {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-gap: 50px;
+  max-width: 1200px;
+}
+
+.gridTeilnehmerItemPic {
+  width: 250px;
+  height: 250px;
+  border-radius: 16px;
+  background: #c6bbf3;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.gridTeilnehmerItemName {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19.2px; /* 120% */
+  color: #252330;
+  text-align: left;
+}
+
+.gridTeilnehmerItemPosition {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.8px; /* 120% */
+  color: #000;
+  text-align: left;
+}
+
+.gridTeilnehmerItemComp {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.8px; /* 120% */
+  color: #000;
+  text-align: left;
+  opacity: 0.5;
+}
+
+.gridTalks {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-gap: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.gridTalksItem {
+  width: 290px;
+  height: auto;
+  min-height: 290px;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0px 0px 20px 1px #e3e3e3;
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.gridTalksItemYear {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  background: #6c53cd;
+  color: #fff;
+  text-align: left;
+  border-radius: 16px;
+  padding: 10px 15px;
+}
+
+.gridTalksItemHeadline {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 120% */
+  color: #000;
+  text-align: left;
+  margin-top: 20px;
+}
+.gridTalksItemText {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 120% */
+  color: #666;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.gridTalksItemRead {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  text-align: left;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: #000 solid 3px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.gridTalksHeadItemHeadline {
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 65px; /* 120% */
+  color: #000;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.gridTalksHeadItemRead {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  text-align: left;
+  margin-top: 55px;
+  padding: 15px 25px;
+  background-color: #6c53cd;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+}
+
+.gridStimmen {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-gap: 50px;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.gridStimmenItem {
+  width: 350px;
+  height: auto;
+  height: 230px;
+  border-radius: 16px;
+  border-radius: 6px;
+  border: 1px solid #e1e0e5;
+  background: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.gridStimmenItem:nth-child(2) {
+  margin-top: 26px;
+}
+
+.gridStimmenItem:nth-child(3n + 4),
+.gridStimmenItem:nth-child(3n + 6) {
+  margin-top: -26px;
+}
+
+.gridStimmenItemHead {
+  border-bottom: 1px solid #e1e0e5;
+  background: #f6f4ff;
+  height: 92px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.gridStimmenItemHeadName {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19.2px; /* 120% */
+  color: #252330;
+  text-align: left;
+  margin-left: 40px;
+  margin-top: -44px;
+}
+
+.gridStimmenItemHeadTag {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.2px; /* 120% */
+  color: #6c53cd;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.gridStimmenItemHeadJob {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19.2px; /* 120% */
+  color: #595073;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.gridStimmenItemText {
+  padding: 16px;
+  color: #252330;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 150% */
+}
+
+.anmeldung {
+  margin: auto;
+  width: 1200px;
+  height: 445.837px;
+  background-color: #6c53cd;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("src/backgroundAnmeldung.png");
+  background-size: cover;
+}
+
+.anmeldungHeadline {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 43.2px; /* 120% */
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.anmeldungText {
+  margin: auto;
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 28px; /* 150% */
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  max-width: 660px;
+}
+
+.anmeldungInput {
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.4);
+  width: 500px;
+  border-radius: 9999px;
+}
+
+input {
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  width: 400px;
+  font-size: 18px;
+  color: #c0bfc6;
+}
+
+.anmeldungInputSend {
+  background-color: #c1a9ff;
+  padding: 8px 30px;
+  border-radius: 9999px;
+  position: relative;
+  left: 8px;
+  cursor: pointer;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.copyright {
+  color: #595073;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+}
+
+.footerLineHead {
+  color: #595073;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 150% */
+  text-transform: uppercase;
+}
+
+.footerLine {
+  color: #252330 !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin-top: 16px;
+}
