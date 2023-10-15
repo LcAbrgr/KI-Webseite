@@ -163,10 +163,10 @@ header {
 }
 
 .bilder {
-    background-image: url('src/bild1.png');
+    background-image: url('src/bild1.jpg');
 }
 .bilder2 {
-    background-image: url('src/bild2.png');
+    background-image: url('src/bild2.jpg');
 }
 .bilder3 {
     background-image: url('src/bild3.png');
@@ -184,12 +184,13 @@ header {
 }
 
 .bilder::after, .bilder2, .bilder3{
-
 }
 .bilder:hover, .bilder2:hover, .bilder3:hover{
-    background-size: 110%;
+    /* background-color: red;
+    z-index: 3; */
+    /* background-size: 110%;
     background-color: #2523302b;
-    filter: brightness(0.8);
+    filter: brightness(0.8); */
 }
 
 /* .bilder:hover::after{
