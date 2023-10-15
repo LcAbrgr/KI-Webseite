@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="style.css" />
         <script src="script.js"></script>
         <title>QNI</title>
+        <link rel="icon" type="image/x-icon" href="src/icon.svg">
     </head>
 
     <body>
@@ -16,15 +17,15 @@
                     width="24px"
                 />
                 <a href="#ref" class="headerItem">Referent:innen</a>
-                <a class="headerItem">Programm</a>
+                <a href="#program" class="headerItem">Programm</a>
                 <a href="#zeit" class="headerItem">Zeitplan</a>
-                <a class="headerItem">Stand der Forschung</a>
+                <a href="#stand" class="headerItem">Stand der Forschung</a>
             </div>
             <div class="End"><a class="headerItemEnd">Tickets sichern</a></div>
         </header>
 
-        <center>
-            <div style="height: 30px"></div>
+        <center class="container">
+            <div style="height: 60px"></div>
             <div class="ZukunftJetzt"></div>
 
             <h1 class="MainHeadline">
@@ -42,6 +43,18 @@
                 <a class="buttonGrau">Stand der Forschung</a>
             </div>
 
+        </center>
+        
+            <div class="banner" style="margin: 32px 0;">
+                <p class="container">
+                    Die Quanten-Neuro-Interaktion - die Verbindung von Quantenphysik und Neurowissenschaften - ist unser Thema. Entdecken Sie auf unserem Kongress die aufregenden Möglichkeiten in diesem aufstrebenden Forschungsfeld. Treffen Sie führende Experten, vernetzen Sie sich und erweitern Sie Ihr Wissen.
+                </p>
+                <p class="container">
+                    Ein inspirierender Austausch am 14. und 15. September in Berlin und digital erwartet Sie. Machen Sie sich auf Überraschungen gefasst! #QuantenNeuroKongress
+                </p>
+            </div>
+
+        <center class="container">
             <div class="startKongress" style="margin-top: 75px">
                 Der Kongress startet in:
             </div>
@@ -49,43 +62,43 @@
             <div class="counter">
                 <div class="counter-item">
                     <div style="font-size: 70px">09</div>
-                    Days
+                    Tagen
                 </div>
                 <div class="counter-item" id="hours">
                     <div style="font-size: 70px">11</div>
-                    Hour
+                    Stunden
                 </div>
                 <div class="counter-item" id="minuts">
                     <div style="font-size: 70px">39</div>
-                    Minutes
+                    Minuten
                 </div>
                 <div class="counter-item" id="seconds">
                     <div style="font-size: 70px">52</div>
-                    Seconds
+                    Sekunden
                 </div>
             </div>
 
             <div style="margin-top: 50px; max-width: 1200px">
                 <div class="bilder">
                     <div class="bildButton">
-                        <a class="buttonLila">Key Speakers</a>
+                        <a class="buttonLila" href="#ref">Referent:innen</a>
                     </div>
                 </div>
                 <div class="bilder2">
-                    <div class="bildButton">
-                        <a class="buttonLila">Scientific programme</a>
+                    <div class="bildButton"> 
+                        <a class="buttonLila" href="#program">Programm</a>
                     </div>
                 </div>
                 <div class="bilder3">
                     <div class="bildButton">
-                        <a class="buttonLila">EASL Congress 2023 FAQs</a>
+                        <a class="buttonLila" href="#voices">Stimmen zum Kongress</a>
                     </div>
                 </div>
             </div>
 
             <div style="height: 225px"></div>
 
-            <div style="color: #595073; font-size: 20px">
+            <div style="color: var(--secondary); font-size: 20px">
                 Tausende von Neurologen in Unternehmen vertrauen darauf
             </div>
             <div class="gridCompLogo">
@@ -106,7 +119,7 @@
             <div id="zeit" class="startKongress">Zeitplan</div>
             <div
                 style="
-                    color: #595073;
+                    color: var(--secondary);
                     font-size: 16px;
                     max-width: 800px;
                     margin-top: 20px;
@@ -177,7 +190,7 @@
                 <div
                     style="
                         text-align: left;
-                        color: #595073;
+                        color: var(--secondary);
                         font-size: 16px;
                         margin-top: 20px;
                         padding-right: 400px;
@@ -249,7 +262,7 @@
                         <div style="display: flex">
                             <div class="gridRefItemKey">Keynote</div>
                             <div class="gridRefItemHeadline">
-                                Unsere Fucking Zukunft: warum wir für den Wandel
+                                Unsere Fucking Zukunft: Warum wir für den Wandel
                                 rebellieren müssen
                             </div>
                         </div>
@@ -309,7 +322,7 @@
 
                     <div class="gridTeilnehmerItemName">Ava Harrington</div>
                     <div class="gridTeilnehmerItemPosition">
-                        Director Communications
+                        Director Kommunikation
                     </div>
                     <div class="gridTeilnehmerItemComp">Zalando</div>
                 </div>
@@ -322,7 +335,7 @@
                     </div>
                     <div class="gridTeilnehmerItemName">Dr. Ethan Mercer</div>
                     <div class="gridTeilnehmerItemPosition">
-                        Communication Expert
+                        Experte für Kommunikation
                     </div>
                     <div class="gridTeilnehmerItemComp">
                         Volkswagen Group Academy
@@ -337,7 +350,7 @@
                     </div>
                     <div class="gridTeilnehmerItemName">Sophia Becker</div>
                     <div class="gridTeilnehmerItemPosition">
-                        Head of Group Communications
+                        Leiterin der Konzernkommunikation
                     </div>
                     <div class="gridTeilnehmerItemComp">
                         ProSiebenSat.1 Media
@@ -380,7 +393,7 @@
                     </div>
                     <div class="gridTeilnehmerItemName">Oliv Wrenwood</div>
                     <div class="gridTeilnehmerItemPosition">
-                        Head of Group Communications
+                        Leiter Marketing
                     </div>
                     <div class="gridTeilnehmerItemComp">Roche</div>
                 </div>
@@ -408,7 +421,7 @@
                 <div class="gridTeilnehmerItem">
                     <div class="gridTeilnehmerItemPic">
                         <img
-                            src="src/teilnehmer1.png"
+                            src="src/teilnehmer9.png"
                             style="width: 250px; border-radius: 16px"
                         />
                     </div>
@@ -423,7 +436,7 @@
                 <div class="gridTeilnehmerItem">
                     <div class="gridTeilnehmerItemPic">
                         <img
-                            src="src/teilnehmer1.png"
+                            src="src/teilnehmer10.png"
                             style="width: 250px; border-radius: 16px"
                         />
                     </div>
@@ -436,7 +449,7 @@
                 <div class="gridTeilnehmerItem">
                     <div class="gridTeilnehmerItemPic">
                         <img
-                            src="src/teilnehmer1.png"
+                            src="src/teilnehmer11.png"
                             style="width: 250px; border-radius: 16px"
                         />
                     </div>
@@ -451,7 +464,7 @@
                 <div class="gridTeilnehmerItem">
                     <div class="gridTeilnehmerItemPic">
                         <img
-                            src="src/teilnehmer1.png"
+                            src="src/teilnehmer15.png"
                             style="width: 250px; border-radius: 16px"
                         />
                     </div>
@@ -460,13 +473,13 @@
                         Krankenschwester
                     </div>
                     <div class="gridTeilnehmerItemComp">
-                        City General Hospital
+                        St. Vinzent Krankenhaus
                     </div>
                 </div>
                 <div class="gridTeilnehmerItem">
                     <div class="gridTeilnehmerItemPic">
                         <img
-                            src="src/teilnehmer1.png"
+                            src="src/teilnehmer12.png"
                             style="width: 250px; border-radius: 16px"
                         />
                     </div>
@@ -479,7 +492,7 @@
                 <div class="gridTeilnehmerItem">
                     <div class="gridTeilnehmerItemPic">
                         <img
-                            src="src/teilnehmer1.png"
+                            src="src/teilnehmer13.png"
                             style="width: 250px; border-radius: 16px"
                         />
                     </div>
@@ -509,8 +522,9 @@
 
             <div style="height: 200px"></div>
         </center>
-        <div class="gridTalks">
-            <div class="gridTalksHeadItem">
+
+        <div class="gridTalks" id="program">
+            <div class="gridTalksHeadItem" id="parenttalk1">
                 <div class="gridTalksHeadItemHeadline">Talks über QNI</div>
                 <div class="gridTalksItemText">
                     QNI erforscht die potenzielle Verbindung zwischen
@@ -533,17 +547,17 @@
                     Potenzial voll auszuschöpfen.
                 </div>
                 <div class="gridTalksHeadItemRead">
-                    <a id="SMtalk1" onclick="showMore('talk1')">Read More</a>
+                    <a id="SMtalk1" onclick="showMore('talk1')">Mehr Anzeigen</a>
                     <a
                         id="SLtalk1"
                         onclick="showLess('talk1')"
                         style="display: none"
-                        >Read Less
+                        >Weniger Anzeigen
                     </a>
                 </div>
             </div>
 
-            <div class="gridTalksItem">
+            <div class="gridTalksItem" id="parenttalk2">
                 <div class="gridTalksItemYear">2015 - 2017</div>
                 <div class="gridTalksItemHeadline">
                     Die Synergie von Gehirn und Quantenwelt
@@ -571,16 +585,16 @@
                     beeinflussen.
                 </div>
                 <div class="gridTalksItemRead">
-                    <a id="SMtalk2" onclick="showMore('talk2')">Read More</a>
+                    <a id="SMtalk2" onclick="showMore('talk2')">Mehr Anzeigen</a>
                     <a
                         id="SLtalk2"
                         onclick="showLess('talk2')"
                         style="display: none"
-                        >Read Less
+                        >Weniger Anzeigen
                     </a>
                 </div>
             </div>
-            <div class="gridTalksItem">
+            <div class="gridTalksItem" id="parenttalk3">
                 <div class="gridTalksItemYear">2018</div>
                 <div class="gridTalksItemHeadline">QNI und Bewusstsein</div>
                 <div class="gridTalksItemText">
@@ -602,16 +616,16 @@
                     zu heben und neue Horizonte für die Forschung zu eröffnen.
                 </div>
                 <div class="gridTalksItemRead">
-                    <a id="SMtalk3" onclick="showMore('talk3')">Read More</a>
+                    <a id="SMtalk3" onclick="showMore('talk3')">Mehr Anzeigen</a>
                     <a
                         id="SLtalk3"
                         onclick="showLess('talk3')"
                         style="display: none"
-                        >Read Less
+                        >Weniger Anzeigen
                     </a>
                 </div>
             </div>
-            <div class="gridTalksItem">
+            <div class="gridTalksItem" id="parenttalk4">
                 <div class="gridTalksItemYear">2018 - 2020</div>
                 <div class="gridTalksItemHeadline">
                     Neue Ansätze für die Neurologie und Psychiatrie
@@ -631,16 +645,16 @@
                     Entwicklungen in der Medizin.
                 </div>
                 <div class="gridTalksItemRead">
-                    <a id="SMtalk4" onclick="showMore('talk4')">Read More</a>
+                    <a id="SMtalk4" onclick="showMore('talk4')">Mehr Anzeigen</a>
                     <a
                         id="SLtalk4"
                         onclick="showLess('talk4')"
                         style="display: none"
-                        >Read Less
+                        >Weniger Anzeigen
                     </a>
                 </div>
             </div>
-            <div class="gridTalksItem">
+            <div class="gridTalksItem" id="parenttalk5">
                 <div class="gridTalksItemYear">2021 - 2022</div>
                 <div class="gridTalksItemHeadline">
                     Quantencomputing und Künstliche Intelligenz
@@ -657,16 +671,16 @@
                     Auswirkungen haben könnten.
                 </div>
                 <div class="gridTalksItemRead">
-                    <a id="SMtalk5" onclick="showMore('talk5')">Read More</a>
+                    <a id="SMtalk5" onclick="showMore('talk5')">Mehr Anzeigen</a>
                     <a
                         id="SLtalk5"
                         onclick="showLess('talk5')"
                         style="display: none"
-                        >Read Less
+                        >Weniger Anzeigen
                     </a>
                 </div>
             </div>
-            <div class="gridTalksItem">
+            <div class="gridTalksItem" id="parenttalk6">
                 <div class="gridTalksItemYear">2023</div>
                 <div class="gridTalksItemHeadline">
                     Herausforderungen und Chancen
@@ -686,26 +700,38 @@
                     spannenden, aber auch verantwortungsvollen Forschungsfeld.
                 </div>
                 <div class="gridTalksItemRead">
-                    <a id="SMtalk6" onclick="showMore('talk6')">Read More</a>
+                    <a id="SMtalk6" onclick="showMore('talk6')">Mehr Anzeigen</a>
                     <a
                         id="SLtalk6"
                         onclick="showLess('talk6')"
                         style="display: none"
-                        >Read Less
+                        >Weniger Anzeigen
                     </a>
                 </div>
             </div>
+        </div>
+
+        <div class="video-abschnitt container">
+            <p>Die folgenden Konferenzausschnitte bieten Einblicke in die aufregende Welt der Quanten-Neuro-Interaktion und zeigen, wie sie unser Verständnis der Realität und des menschlichen Geistes auf den Kopf stellen könnte. Machen Sie sich bereit für inspirierende Diskussionen und tiefe Einblicke in die Zukunft der Forschung.</p>
+
+            <h3>Die Faszination für QNI: Warum es alle reden</h3>
+            <!-- <video class="seminar" src="https://ki-diskursive-experimente.raumfuergestaltung.xyz/wp-content/uploads/2023/10/Quanten_neuro_interatkion_Expertentalk_bearbeitet_1.mp4"></video> -->
+            <video controls class="seminar" >
+                <source src="https://ki-diskursive-experimente.raumfuergestaltung.xyz/wp-content/uploads/2023/10/Quanten_neuro_interatkion_Expertentalk_bearbeitet_1.mp4" type="video/mp4">
+            </video>
+            <h3>QNI im Rampenlicht - Ansichten aus verschiedenen Perspektiven</h3>
+            <video controls class="seminar" src="https://ki-diskursive-experimente.raumfuergestaltung.xyz/wp-content/uploads/2023/10/TalkingKIs_Funny.mp4"></video>
         </div>
 
         <div style="height: 100px"></div>
         <img src="src/wave.png" width="100%" style="margin-top: 30px" />
         <div style="height: 100px"></div>
 
-        <div class="startKongress">Stimmen zum Kongress</div>
+        <div class="startKongress" id="voices">Stimmen zum Kongress</div>
         <div
             style="
                 text-align: center;
-                color: #595073;
+                color: var(--secondary);
                 font-size: 18px;
                 margin-top: 20px;
             "
@@ -727,10 +753,10 @@
                 </div>
                 <div class="gridStimmenItemText">
                     Faszinierende Diskussionen auf dem
-                    <b style="color: #6c53cd">#QNIKongress</b>! Hier treffen
+                    <b style="color: var(--primary)">#QNIKongress</b>! Hier treffen
                     Quantenverschränkung und Gehirnwellen aufeinander - wer
                     hätte gedacht, dass sie so viel gemeinsam haben? 🌌🤯
-                    <b style="color: #6c53cd">#Innovation</b>
+                    <b style="color: var(--primary)">#Innovation</b>
                 </div>
             </div>
             <div class="gridStimmenItem">
@@ -747,11 +773,11 @@
                 </div>
                 <div class="gridStimmenItemText">
                     Gerade beim
-                    <b style="color: #6c53cd">#QuantenNeuroKongress</b> gewesen
+                    <b style="color: var(--primary)">#QuantenNeuroKongress</b> gewesen
                     und mein Verstand ist förmlich explodiert! Die Verbindung
                     von Quantenphysik und Neurologie ist wirklich atemberaubend.
                     🧠🔮
-                    <b style="color: #6c53cd">#ZukunftsweisendeWissenschaft</b>
+                    <b style="color: var(--primary)">#ZukunftsweisendeWissenschaft</b>
                 </div>
             </div>
             <div class="gridStimmenItem">
@@ -770,7 +796,7 @@
                     Die Teilnahme am Kongress für Quanten-Neuro-Interaktion war
                     eine unglaubliche Erfahrung. Es ist erstaunlich, die Zukunft
                     der Wissenschaft direkt vor unseren Augen zu erleben.
-                    <b style="color: #6c53cd">#NeuroQuantum</b>
+                    <b style="color: var(--primary)">#NeuroQuantum</b>
                 </div>
             </div>
             <div class="gridStimmenItem">
@@ -787,7 +813,7 @@
                     Die Schnittstelle zwischen Quantenmechanik und neuronalen
                     Netzwerken war noch nie so aufregend! 🌟 Ich liebe die
                     Erkenntnisse und Diskussionen auf dem
-                    <b style="color: #6c53cd"
+                    <b style="color: var(--primary)"
                         >#QuantenNeuroKongress #NextGenForschung</b
                     >
                 </div>
@@ -806,11 +832,11 @@
                 </div>
                 <div class="gridStimmenItemText">
                     Beim
-                    <b style="color: #6c53cd">#QuantenNeuroKongress</b>
+                    <b style="color: var(--primary)">#QuantenNeuroKongress</b>
                     beeindruckt von der Möglichkeit, wie Quantenmechanik unser
                     Verständnis des Gehirns erweitert. Eine aufregende Zeit für
                     die Wissenschaft! 🧠🔬
-                    <b style="color: #6c53cd">#NeueHorizonte</b>
+                    <b style="color: var(--primary)">#NeueHorizonte</b>
                 </div>
             </div>
             <div class="gridStimmenItem">
@@ -826,9 +852,9 @@
                 <div class="gridStimmenItemText">
                     Erstaunt über die Verbindung von Quantenphänomenen und
                     Gehirnfunktionen auf dem
-                    <b style="color: #6c53cd">#QNIKongress</b>. Eine aufregende
+                    <b style="color: var(--primary)">#QNIKongress</b>. Eine aufregende
                     Ära der Forschung hat begonnen! 🌌🧠
-                    <b style="color: #6c53cd">#FrontiersOfScience</b>
+                    <b style="color: var(--primary)">#FrontiersOfScience</b>
                 </div>
             </div>
             <div class="gridStimmenItem">
@@ -845,10 +871,10 @@
                 </div>
                 <div class="gridStimmenItemText">
                     Teilnahme am
-                    <b style="color: #6c53cd">#QuantenNeuroKongress</b> hat mich
+                    <b style="color: var(--primary)">#QuantenNeuroKongress</b> hat mich
                     wirklich zum Nachdenken gebracht. Die Verschmelzung von
                     Quantenwelt und Gehirnaktivität ist faszinierend! 💡🌟
-                    <b style="color: #6c53cd">#ScienceExploration</b>
+                    <b style="color: var(--primary)">#ScienceExploration</b>
                 </div>
             </div>
             <div class="gridStimmenItem">
@@ -865,10 +891,10 @@
                 </div>
                 <div class="gridStimmenItemText">
                     Die Zukunft ist hier! Am
-                    <b style="color: #6c53cd">#QuantenNeuroKongress</b> erstaunt
+                    <b style="color: var(--primary)">#QuantenNeuroKongress</b> erstaunt
                     über die Möglichkeiten, wie Quantenphänomene das Verständnis
                     unserer Gedanken und Gehirne revolutionieren. 🚀🧠
-                    <b style="color: #6c53cd">#QuantumRevolution</b>
+                    <b style="color: var(--primary)">#QuantumRevolution</b>
                 </div>
             </div>
             <div class="gridStimmenItem">
@@ -882,11 +908,11 @@
                     <div class="gridStimmenItemHeadJob">Neuropsychologin</div>
                 </div>
                 <div class="gridStimmenItemText">
-                    Der <b style="color: #6c53cd">#QNIKongress</b> hat gezeigt,
+                    Der <b style="color: var(--primary)">#QNIKongress</b> hat gezeigt,
                     wie die Kombination von Quantenphysik und
                     Neurowissenschaften zu aufregenden neuen Erkenntnissen
                     führen kann. Spannende Zeiten! 🌌🔬
-                    <b style="color: #6c53cd">#WissenschaftEntdecken</b>
+                    <b style="color: var(--primary)">#WissenschaftEntdecken</b>
                 </div>
             </div>
             <div class="gridStimmenItem">
@@ -905,11 +931,11 @@
                 </div>
                 <div class="gridStimmenItemText">
                     Am
-                    <b style="color: #6c53cd">#QuantenNeuroKongress</b>
+                    <b style="color: var(--primary)">#QuantenNeuroKongress</b>
                     diskutieren wir das Unmögliche. Quantenphysik und
                     Neuroneninteraktion - ein bemerkenswerter Schritt in der
                     Forschung. 🌠🧠
-                    <b style="color: #6c53cd">#WissenschaftErforschen</b>
+                    <b style="color: var(--primary)">#WissenschaftErforschen</b>
                 </div>
             </div>
             <div class="gridStimmenItem">
@@ -926,10 +952,10 @@
                 </div>
                 <div class="gridStimmenItemText">
                     Es ist fast surreal, wie die Realität die Fiktion auf dem
-                    <b style="color: #6c53cd">#QuantenNeuroKongress</b>
+                    <b style="color: var(--primary)">#QuantenNeuroKongress</b>
                     überholt. Das Potenzial der Quanten-Neuro-Interaktion ist
                     ein wahres Abenteuer der Wissenschaft! 🚀📚
-                    <b style="color: #6c53cd">#ScienceFictionRealität</b>
+                    <b style="color: var(--primary)">#ScienceFictionRealität</b>
                 </div>
             </div>
             <div class="gridStimmenItem">
@@ -943,11 +969,11 @@
                     <div class="gridStimmenItemHeadJob">Bioinformatiker</div>
                 </div>
                 <div class="gridStimmenItemText">
-                    Beim <b style="color: #6c53cd">#QNIKongress</b> werden
+                    Beim <b style="color: var(--primary)">#QNIKongress</b> werden
                     Grenzen zwischen Disziplinen verschwommen. Die Verbindung
                     von Quantenphysik und Neurologie eröffnet neue Perspektiven.
                     🌌🧠
-                    <b style="color: #6c53cd">#InterdisziplinäreForschung</b>
+                    <b style="color: var(--primary)">#InterdisziplinäreForschung</b>
                 </div>
             </div>
             <div class="gridStimmenItem">
@@ -963,9 +989,9 @@
                 <div class="gridStimmenItemText">
                     Fasziniert von den Möglichkeiten der
                     Quanten-Neuro-Interaktion auf dem
-                    <b style="color: #6c53cd">#QuantenNeuroKongress</b>. KI und
+                    <b style="color: var(--primary)">#QuantenNeuroKongress</b>. KI und
                     Gehirn - eine Symbiose, die unsere Zukunft gestaltet! 🌐🧠
-                    <b style="color: #6c53cd">#AIInnovation</b>
+                    <b style="color: var(--primary)">#AIInnovation</b>
                 </div>
             </div>
             <div class="gridStimmenItem">
@@ -981,11 +1007,11 @@
                     </div>
                 </div>
                 <div class="gridStimmenItemText">
-                    Am <b style="color: #6c53cd">#QNIKongress</b> erkenne ich,
+                    Am <b style="color: var(--primary)">#QNIKongress</b> erkenne ich,
                     wie Quantenphänomene unser Verständnis des Gehirns
                     erweitern. Eine faszinierende Reise in die Welt der
                     Wissenschaft! 🌌🔬
-                    <b style="color: #6c53cd">#GehirnErforschen</b>
+                    <b style="color: var(--primary)">#GehirnErforschen</b>
                 </div>
             </div>
             <div class="gridStimmenItem">
@@ -1001,12 +1027,117 @@
                     </div>
                 </div>
                 <div class="gridStimmenItemText">
-                    Der <b style="color: #6c53cd">#QuantenNeuroKongress</b> hat
+                    Der <b style="color: var(--primary)">#QuantenNeuroKongress</b> hat
                     mir die Augen für die aufregenden Verbindungen zwischen
                     Quantenwelt und Gehirnfunktionen geöffnet. Eine
                     inspirierende Erfahrung! 🌟🧠
-                    <b style="color: #6c53cd">#WissenschaftEntdecken</b>
+                    <b style="color: var(--primary)">#WissenschaftEntdecken</b>
                 </div>
+            </div>
+        </div>
+        <div id="stand" class="div-stand-der-forschung" style="background: linear-gradient(-225deg, #252330, #534188 126%); margin: 54px auto; padding: 54px 16px;">
+
+            <h2 style="margin-bottom: 24px;" id="headline-stand">Stand der Forschung</h2>
+
+            <div class="timeline">
+                <div class="tm-container left">
+                <div class="content">
+                    <h2>1930</h2>
+                    <h3>Erste Forschungen zur Quantenmechanik</h3>
+                    <p>Die 1930er Jahre waren geprägt von den Pionieren der Quantenmechanik, darunter Größen wie Erwin Schrödinger, Werner Heisenberg und Max Born. In dieser Zeit wurden die grundlegenden Prinzipien der Quantenphysik entwickelt, die die Welt der Physik revolutionierten. Die Quantenmechanik beschäftigt sich mit den ungewöhnlichen Phänomenen der subatomaren Welt, wie Superposition und Verschränkung, die unser klassisches Verständnis der Realität herausforderten und zu einem tiefgreifenden Paradigmenwechsel führten.</p>
+                </div>
+                </div>
+                <div class="tm-container right">
+                <div class="content">
+                    <h2>1960</h2>
+                    <h3>Erste Forschungen zur Neurophysiologie</h3>
+                    <p>In den 1960er Jahren trat die Neurowissenschaft auf die Bühne der Forschung. Die Erforschung des Gehirns und seiner neuronalen Prozesse gewann an Bedeutung. Wissenschaftler begannen, die komplexen Mechanismen des Gehirns zu entschlüsseln und eröffneten damit neue Horizonte für das Verständnis der kognitiven Funktionen.</p>
+                </div>
+                </div>
+                <div class="tm-container left">
+                <div class="content">
+                    <h2>1980</h2>
+                    <h3>Erste Forschungen zur Quanten-Neuro-Interaktion</h3>
+                    <p>Die 1980er Jahre markierten den Beginn von Forschungen zur Quanten-Neuro-Interaktion (QNI), einem aufstrebenden Gebiet, das die Verbindung zwischen Quantenmechanik und Neurowissenschaften erforschte. Die Idee, dass Quantenphänomene im Gehirn eine Rolle spielen könnten, löste eine Welle der Neugier und Begeisterung aus. Forscher begannen, die Möglichkeiten zu erkunden, wie Quantenmechanik das Verständnis des Gehirns und seiner Funktionen bereichern könnte.</p>
+                </div>
+                </div>
+                <div class="tm-container right">
+                <div class="content">
+                    <h2>1990</h2>
+                    <h3>Erste Experimente zur Untersuchung der Quanten-Neuro-Interaktion</h3>
+                    <p>In den 1990er Jahren wurden die ersten Experimente zur Erforschung der QNI durchgeführt. Wissenschaftler suchten nach Anzeichen von Quanteneffekten im Gehirn und entwickelten Methoden, um diese Phänomene zu messen. Diese Experimente eröffneten neue Einblicke in die komplexen Prozesse des Gehirns und legten den Grundstein für weiterführende Forschungen.</p>
+                </div>
+                </div>
+                <div class="tm-container left">
+                <div class="content">
+                    <h2>2000</h2>
+                    <h3>Erste Ergebnisse der Quanten-Neuro-Interaktion</h3>
+                    <p>Die ersten Ergebnisse der QNI-Forschung wurden in den frühen 2000er Jahren veröffentlicht. Diese Ergebnisse zeigten, dass es tatsächlich Hinweise auf Quantenphänomene im Gehirn gibt, die Einfluss auf kognitive Prozesse haben könnten. Dies eröffnete spannende Perspektiven für die Zukunft der Neurowissenschaften und der Quantenphysik.</p>
+                </div>
+                </div>
+                <div class="tm-container right">
+                <div class="content">
+                    <h2>2010</h2>
+                    <h3>Weiterentwicklung der Theorie der Quanten-Neuro-Interaktion</h3>
+                    <p>Im Laufe des Jahrzehnts entwickelte sich die Theorie der QNI weiter. Wissenschaftler und Forscher arbeiteten daran, die Mechanismen und Auswirkungen der Quantenmechanik im Gehirn genauer zu verstehen. Dies führte zu einer tieferen Integration von Quantenphysik und Neurowissenschaften.</p>
+                </div>
+                </div>
+                <div class="tm-container left">
+                    <div class="content">
+                    <h2>2016</h2>
+                    <h3>Erste Patentanmeldung</h3>
+                    <p>Schließlich, im Jahr 2016, wurden die ersten Patente im Zusammenhang mit der QNI-Forschung angemeldet. Dies unterstreicht das wachsende Interesse an den praktischen Anwendungen der QNI und den potenziellen Nutzen für die Medizin, die künstliche Intelligenz und andere Bereiche. Dieser Meilenstein markiert den Übergang von der reinen Forschung zur Anwendung in der realen Welt.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 900px;">
+            <p>Die letzten Jahre haben eine beeindruckende Flut an Entwicklungen und Entdeckungen in den Bereichen Quantenmechanik und Neurowissenschaften gebracht. In der Quantenmechanik wurden bahnbrechende Fortschritte in der Entwicklung von Quantencomputern und Quantenkommunikationstechnologien erzielt. Diese Quantentechnologien haben das Potenzial, unsere herkömmlichen Rechen- und Kommunikationssysteme zu revolutionieren. Forscher haben erfolgreiche Experimente mit Verschränkung und Quantenkohärenz im Kontext von Informationsspeicherung und -übertragung durchgeführt.</p>
+            <br>
+            <p>In der Neurowissenschaft wurden faszinierende Einblicke in die neuronalen Grundlagen des Bewusstseins und der kognitiven Prozesse gewonnen. Die Bildgebungstechnologie ermöglicht es Forschern, das Gehirn in bisher unerreichter Detailtreue zu erforschen. Der Zusammenhang zwischen neuronaler Aktivität und bewusstem Denken wurde besser verstanden, und es gibt Anzeichen dafür, dass Quantenphänomene im Gehirn eine bedeutende Rolle spielen könnten.</p>
+        </div>
+
+        <div class="program container" style="margin-top: 90px;">
+            <h2>Freuen Sie sich auf diese Themen:</h2>
+            <div class="topic-grid">
+
+                <div class="topic">
+                    <img src="src/topic1.png" alt="">
+                    <div class="gridRefItemKey">Topic</div>
+                    <h3>Quantenmechanik und Gehirn</h3>
+                    <p>Die aufregende Idee, dass die Quantenmechanik bei der Informationsverarbeitung im menschlichen Gehirn eine Rolle spielen könnte, hat die Aufmerksamkeit von Forschern und Wissenschaftlern auf der ganzen Welt erregt. Die Theorie der Quantenkohärenz im Gehirn wurde als möglicher Mechanismus für diesen Prozess vorgeschlagen. Sie besagt, dass Quantenphänomene wie Superposition und Verschränkung im Gehirn auftreten könnten, was die Komplexität der neuronalen Verarbeitung erklären würde. Dies ist ein faszinierendes Gebiet, das die Grenzen unseres Verständnisses von Bewusstsein und kognitiver Verarbeitung herausfordert.</p>
+                </div>
+                
+                <div class="topic">
+                    <img src="src/topic2.jpg" alt="">
+                    <div class="gridRefItemKey">Topic</div>
+                    <h3>Quantenphysik und Zukunft</h3>
+                    <p>Die Quantenmechanik, ein faszinierender Zweig der Physik, hat die Vorstellungskraft von Forschern beflügelt und technologische Entwicklungen vorangetrieben. Ein Schlüsselaspekt der Quantenmechanik ist die Idee, dass Teilchen in mehreren Zuständen gleichzeitig existieren können. Dies hat zu Fortschritten in der Entwicklung von Quantencomputern geführt, die immense Rechenleistung bieten könnten. Darüber hinaus wird die Quantenmechanik in der Quantenkommunikation und -kryptographie genutzt, um die Sicherheit von Informationen zu gewährleisten. Dieses Forschungsgebiet verspricht auf lange Sicht, die Art und Weise zu revolutionieren, wie wir Daten verarbeiten und schützen.
+                    </p>
+                </div>
+                                
+                <div class="topic">
+                    <img src="src/topic3.jpg" alt="">
+                    <div class="gridRefItemKey">Topic</div>
+                    <h3>Die Quanten-Neuro-Interaktion</h3>
+                    <p>Die Quanten-Neuro-Interaktion (QNI) ist ein aufregendes, aufstrebendes Forschungsgebiet, das die Verbindung zwischen Quantenphysik und Neurowissenschaften untersucht. Die Grundidee hinter QNI ist, dass die Quantenmechanik eine bislang unerkannte Rolle in den komplexen Prozessen des Gehirns spielen könnte. Diese hypothetische Verbindung könnte ein tiefes Verständnis der Gehirnfunktion und der Entstehung von Bewusstsein bieten. Während QNI noch in den Kinderschuhen steckt, sind Wissenschaftler weltweit begeistert von den Möglichkeiten, die sich daraus ergeben könnten.</p>
+                </div>
+                                
+                <div class="topic">
+                    <img src="src/topic4.jpg" alt="">
+                    <div class="gridRefItemKey">Topic</div>
+                    <h3>Gehirn und Neuronen</h3>
+                    <p>Das Gehirn ist ein erstaunliches Organ, das aus Milliarden von Neuronen besteht. Diese Neuronen kommunizieren miteinander über elektrische und chemische Signale, um unsere Gedanken, Emotionen und Aktionen zu steuern. Die enge Interaktion zwischen diesen Neuronen ist der Schlüssel zur Funktionsweise des Gehirns und zur Entstehung von Bewusstsein. Unser fortschreitendes Verständnis der neuronalen Netzwerke und wie sie arbeiten, trägt wesentlich zur Erforschung der Quanten-Neuro-Interaktion bei.</p>
+                </div>
+                                
+                <div class="topic">
+                    <img src="src/topic5.jpg" alt="">
+                    <div class="gridRefItemKey">Topic</div>
+                    <h3>Die Zukunft der QNI</h3>
+                    <p>Die Quanten-Neuro-Interaktion ist ein Forschungsfeld, das noch viele Rätsel birgt. Wissenschaftler auf der ganzen Welt arbeiten hart daran, die Verbindung zwischen Quantenmechanik und Neurowissenschaften zu verstehen. Während die Idee der Quanten-Neuro-Interaktion noch in den Kinderschuhen steckt, sind die Zukunftsaussichten äußerst vielversprechend. Dieses Feld hat das Potenzial, unser Verständnis des Gehirns und des Bewusstseins auf revolutionäre Weise zu erweitern und könnte eines Tages bahnbrechende Anwendungen in der Medizin, der künstlichen Intelligenz und der Neurologie ermöglichen.</p>
+                </div>
+                
             </div>
         </div>
 
@@ -1033,7 +1164,7 @@
         <div class="copyright">
             <img src="src/footerLogo.svg" /> <br />© 2023 QNI Kongress Inc.
             <br />
-            All rights reserved.
+            Alle Rechte vorbehalten.
         </div>
         <div></div>
         <div></div>
@@ -1046,25 +1177,25 @@
                 <a href="#zeit" class="footerLine">Zeitplan</a>
             </div>
             <div class="footerLine">
-                <a href="" class="footerLine">Programm</a>
+                <a href="#program" class="footerLine">Programm</a>
             </div>
             <div class="footerLine">
-                <a href="" class="footerLine">Stand der Forschung</a>
+                <a href="#stand" class="footerLine">Stand der Forschung</a>
             </div>
         </div>
         <div>
             <div class="footerLineHead">Kontakt</div>
             <div class="footerLine">
-                <a href="" class="footerLine">Email</a>
+                <a class="footerLine">Email</a>
             </div>
             <div class="footerLine">
-                <a href="" class="footerLine">Support</a>
+                <a href="/intramuroswoche.html" class="footerLine">Fragen?</a>
             </div>
         </div>
         <div>
             <div class="footerLineHead">Legal</div>
             <div class="footerLine">
-                <a href="" class="footerLine">Link zum Projekt</a>
+                <a href="https://ki-diskursive-experimente.raumfuergestaltung.xyz/" target="_blank" class="footerLine">Link zum Projekt</a>
             </div>
         </div>
         <div style="height: 200px"></div>

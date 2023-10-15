@@ -1,6 +1,9 @@
 function showMore(id) {
     const SM = 'SM' + id
     const SL = 'SL' + id
+    const parnetId = 'parent' + id
+
+    document.getElementById(parnetId).classList.add('active');
     document.getElementById(id).style.display = 'block'
     document.getElementById(SM).style.display = 'none'
     document.getElementById(SL).style.display = 'block'
@@ -8,6 +11,7 @@ function showMore(id) {
 function showMoreGrid(id) {
     const SM = 'SM' + id
     const SL = 'SL' + id
+    
     document.getElementById(id).style.display = 'Grid'
     document.getElementById(SM).style.display = 'none'
     document.getElementById(SL).style.display = 'block'
@@ -15,7 +19,10 @@ function showMoreGrid(id) {
 
 function showLess(id) {
     const SM = 'SM' + id
-    const SL = 'SL' + id
+    const SL = 'SL' + id   
+    const parnetId = 'parent' + id
+    
+    document.getElementById(parnetId).classList.remove('active');
     document.getElementById(id).style.display = 'none'
     document.getElementById(SM).style.display = 'block'
     document.getElementById(SL).style.display = 'none'
@@ -63,3 +70,21 @@ function updateCounter() {
 document.addEventListener("DOMContentLoaded", function () {
     setInterval(updateCounter, 1000); // Update every second
 });
+
+window.addEventListener('scroll', function() {
+    const banner = document.getElementsByClassName('banner')[0];
+    const bilder = document.getElementsByClassName('bilder')[0];
+    const bilder2 = document.getElementsByClassName('bilder2')[0];
+    const bilder3 = document.getElementsByClassName('bilder3')[0];
+    let additional = 5000;
+    if (banner.clientWidth < 768) return;
+    
+    const scrollPosition = window.scrollY*0.2 + (((banner.clientWidth / 1.49) / 2) - (350/2))
+    banner.style.backgroundPosition = `center ${-scrollPosition * 0.3}px`;
+    bilder.style.backgroundPosition = `center ${-scrollPosition * 0.3}px`;
+    bilder2.style.backgroundPosition = `center ${-scrollPosition * 0.3}px`;
+    bilder3.style.backgroundPosition = `center ${-scrollPosition * 0.3}px`;
+});
+
+
+// 1934∶1289
