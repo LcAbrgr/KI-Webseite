@@ -11,6 +11,7 @@
 - [x] Sinn der Buttons Programm und Stand der Forschung
 - [ ] Links in Fußleiste
 - [ ] Schärfere Bilder?
+- [ ] Header Links
 
 - [x] Schriftart ändern
 - [x] Counter Funktionalität
