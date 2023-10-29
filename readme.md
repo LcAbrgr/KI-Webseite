@@ -6,12 +6,12 @@
 
 - [x] Program -> Videos mit Erklärung (zu Talks über QNI)
 - [x] Wissenschaftliche Thesen hinzufügen 
-- [ ] Easter Egg -> Tickets sichern
+- [x] Easter Egg -> Tickets sichern
 
 - [x] Sinn der Buttons Programm und Stand der Forschung
-- [ ] Links in Fußleiste
-- [ ] Schärfere Bilder?
-- [ ] Header Links
+- [x] Links in Fußleiste
+- [x] Schärfere Bilder?
+- [x] Header Links
 
 - [x] Schriftart ändern
 - [x] Counter Funktionalität
@@ -21,7 +21,8 @@
 - [X] Scroll To
 
 # Nice To have
-- [ ] Banner mit Scroll Effect
-- [ ] Hover Effecte auf Buttons und interaktive Elemente
+- [x] Banner mit Scroll Effect
+- [x] Hover Effecte auf Buttons und interaktive Elemente
 - [x] Sticky Nav
 - [x] Talks ausklappen nicht alle gleich groß
+- [x] Responsive Design

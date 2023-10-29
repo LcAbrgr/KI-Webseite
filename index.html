@@ -10,18 +10,20 @@
     <body>
         <header>
             <div class="header">
-                <img
-                    src="src/icon.svg"
-                    alt="icon"
-                    height="24px"
-                    width="24px"
-                />
+                <a href="#" >
+                    <img
+                        src="src/icon.svg"
+                        alt="icon"
+                        height="24px"
+                        width="24px"
+                    />
+                </a>
+                <a href="#zeit" class="headerItem">Zeitplan</a>
                 <a href="#ref" class="headerItem">Referent:innen</a>
                 <a href="#program" class="headerItem">Programm</a>
-                <a href="#zeit" class="headerItem">Zeitplan</a>
                 <a href="#stand" class="headerItem">Stand der Forschung</a>
+                <div class="End"><a href="/intramuroswoche.html" class="headerItemEnd buttonLila">Tickets sichern</a></div>
             </div>
-            <div class="End"><a class="headerItemEnd">Tickets sichern</a></div>
         </header>
 
         <center class="container">
@@ -38,9 +40,9 @@
                 Grenzen der Realität verschwimmen lässt.
             </div>
 
-            <div style="margin-top: 30px">
-                <a class="buttonLila">Tickets sichern</a>
-                <a class="buttonGrau">Stand der Forschung</a>
+            <div style="margin: 40px 0 90px">
+                <a href="/intramuroswoche.html" class="buttonLila">Tickets sichern</a>
+                <a href="#stand" class="buttonGrau">Stand der Forschung</a>
             </div>
 
         </center>
@@ -78,7 +80,7 @@
                 </div>
             </div>
 
-            <div style="margin-top: 50px; max-width: 1200px">
+            <div style="margin-top: 80px; max-width: 1200px">
                 <div class="bilder">
                     <div class="bildButton">
                         <a class="buttonLila" href="#ref">Referent:innen</a>
@@ -96,7 +98,7 @@
                 </div>
             </div>
 
-            <div style="height: 225px"></div>
+            <div style="height: 125px"></div>
 
             <div style="color: var(--secondary); font-size: 20px">
                 Tausende von Neurologen in Unternehmen vertrauen darauf
@@ -113,23 +115,16 @@
                 <img src="src/partner9.svg" alt="9" />
                 <img src="src/partner10.png" alt="10" />
             </div>
-
-            <img src="src/wave.png" width="100%" style="margin-top: 30px" />
-
+        </center>
+        <img src="src/wave.png" width="100%" style="margin: 70px 0" />
+        <center class="container">
             <div id="zeit" class="startKongress">Zeitplan</div>
-            <div
-                style="
-                    color: var(--secondary);
-                    font-size: 16px;
-                    max-width: 800px;
-                    margin-top: 20px;
-                "
-            >
+            <p style="max-width: 900px; margin: 20px 0">
                 Tauchen Sie in den vielfältigen Zeitplan ein, der spannende
                 Diskussionen, Panels und interaktive Sessions umfasst. Entdecken
                 Sie, wann unsere Experten über Quanten-Neuro-Interaktion
                 diskutieren werden.
-            </div>
+             </p>
 
             <div class="gridZeitplann">
                 <img
@@ -184,26 +179,21 @@
 
             <div style="max-width: 1200px">
                 <div id="ref" class="BekannteReferenten">
-                    Bekannte Referenten<br />
-                    und Teilnehmer
-                </div>
-                <div
-                    style="
-                        text-align: left;
-                        color: var(--secondary);
-                        font-size: 16px;
-                        margin-top: 20px;
-                        padding-right: 400px;
-                    "
-                >
-                    Treffen Sie die Köpfe hinter den Diskussionen. Lernen Sie
-                    unsere virtuellen Experten kennen und erfahren Sie mehr über
-                    ihre fiktiven Hintergründe. Obwohl sie Kreationen der KI
-                    sind, werden sie dennoch Ihr Denken anregen und zum
-                    Nachdenken über zukünftige Möglichkeiten anregen.
+                    <h2 style="text-align: left;">
+                        Bekannte Referenten<br />
+                        und Teilnehmer
+                    </h2>
+
+                    <p>
+                        Treffen Sie die Köpfe hinter den Diskussionen. Lernen Sie
+                        unsere virtuellen Experten kennen und erfahren Sie mehr über
+                        ihre fiktiven Hintergründe. Obwohl sie Kreationen der KI
+                        sind, werden sie dennoch Ihr Denken anregen und zum
+                        Nachdenken über zukünftige Möglichkeiten anregen.
+                    </p>
                 </div>
                 <div style="margin-top: 30px; text-align: left">
-                    <a class="buttonLila">Zur Diskussion</a>
+                    <a href="#program" class="buttonLila">Zur Diskussion</a>
                 </div>
             </div>
 
@@ -546,7 +536,7 @@
                     dazu bei, die QNI-Forschung weiter voranzutreiben und ihr
                     Potenzial voll auszuschöpfen.
                 </div>
-                <div class="gridTalksHeadItemRead">
+                <div class="gridTalksHeadItemRead buttonLila">
                     <a id="SMtalk1" onclick="showMore('talk1')">Mehr Anzeigen</a>
                     <a
                         id="SLtalk1"
@@ -558,7 +548,7 @@
             </div>
 
             <div class="gridTalksItem" id="parenttalk2">
-                <div class="gridTalksItemYear">2015 - 2017</div>
+                <div class="gridTalksItemYear">Prof. Dr. Christof Spies</div>
                 <div class="gridTalksItemHeadline">
                     Die Synergie von Gehirn und Quantenwelt
                 </div>
@@ -595,7 +585,7 @@
                 </div>
             </div>
             <div class="gridTalksItem" id="parenttalk3">
-                <div class="gridTalksItemYear">2018</div>
+                <div class="gridTalksItemYear">Dr. Ethan Mercer</div>
                 <div class="gridTalksItemHeadline">QNI und Bewusstsein</div>
                 <div class="gridTalksItemText">
                     Die Quantum Neuro Interaktion erforscht die Möglichkeit,
@@ -626,7 +616,7 @@
                 </div>
             </div>
             <div class="gridTalksItem" id="parenttalk4">
-                <div class="gridTalksItemYear">2018 - 2020</div>
+                <div class="gridTalksItemYear">Caleb Ashford</div>
                 <div class="gridTalksItemHeadline">
                     Neue Ansätze für die Neurologie und Psychiatrie
                 </div>
@@ -655,7 +645,7 @@
                 </div>
             </div>
             <div class="gridTalksItem" id="parenttalk5">
-                <div class="gridTalksItemYear">2021 - 2022</div>
+                <div class="gridTalksItemYear">Gabriel Sinclair</div>
                 <div class="gridTalksItemHeadline">
                     Quantencomputing und Künstliche Intelligenz
                 </div>
@@ -681,7 +671,7 @@
                 </div>
             </div>
             <div class="gridTalksItem" id="parenttalk6">
-                <div class="gridTalksItemYear">2023</div>
+                <div class="gridTalksItemYear">David Wilson</div>
                 <div class="gridTalksItemHeadline">
                     Herausforderungen und Chancen
                 </div>
@@ -1154,7 +1144,7 @@
                 </div>
                 <div class="anmeldungInput">
                     <input type="email" placeholder="Email" />
-                    <div class="anmeldungInputSend">Abschicken</div>
+                    <a href="/intramuroswoche.html" class="anmeldungInputSend">Abschicken</a>
                 </div>
             </div>
         </div>

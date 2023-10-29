@@ -49,12 +49,27 @@ h3{
     padding-bottom: 8px;
 }
 
+h1{
+    color: var(--text);
+    font-size: 32px;
+    line-height: 36px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
 header {
     padding: 16px 120px 17px 120px;
     position: fixed;
     width: 100vw;
     z-index: 999;
     background: #FDFDFF;
+}
+
+@media screen and (max-width: 1200px) {
+    header {
+        padding: 20px 20px;
+    }   
 }
 
 .container{
@@ -66,16 +81,41 @@ header {
 .header {
     height: 32px;
     display: flex;
-    align-items: center;s
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    /* left: 50%;
+    transform: translateX(-50%); */
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        /* width: calc( 100% - 133px ); */
+        /* justify-content: center; */
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 12px;
+        height: 100%;
+    }      
 }
 
 .headerItem {
     color: var(--tertiary);
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 21px;
     margin-left: 54px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s linear;
+}
+
+.headerItem:hover {
+    color: var(--primary);
+    border-bottom: 2px solid var(--pinkish);
+    transition: all 0.2s linear;
 }
 
 .headerItemEnd {
@@ -87,19 +127,30 @@ header {
 
 .End {
     position: absolute;
-    right: 120px;
-    top: 18px;
+    right: 10px;
+    /* top: 18px; */
+    /* border-radius: 6px; */
+    /* padding: 5.5px 12px 5.5px 11px; */
+    /* background: var(--primary); */
+}
+
+@media screen and (max-width: 1200px) {
+    .End {
+        right: 30px;
+        position: relative;
+        right: 0px;
+    }     
+}
+
+.End > a{
     color: #fff;
-    border-radius: 6px;
-    padding: 5.5px 12px 5.5px 11px;
-    background: var(--primary);
 }
 
 .ZukunftJetzt {
     background-image: url('src/ZukunftJetzt.png');
     width: 600px;
     height: 80px;
-    margin: 30px;
+    margin: 30px 30px 60px;
 }
 
 .MainHeadline {
@@ -110,6 +161,7 @@ header {
     font-weight: 700;
     line-height: 72px; /* 120% */
     max-width: 1200px;
+    margin-bottom: 20px;
 }
 
 .MainSubHeader {
@@ -129,6 +181,13 @@ header {
     width: 150px;
     color: white;
     margin-right: 5px;
+    transition: all 0.2s linear ;
+}
+
+.buttonLila:hover{
+    background: var(--secondary);
+    color: white;
+    transition: all 0.2s linear ;
 }
 
 .buttonGrau {
@@ -137,6 +196,15 @@ header {
     padding: 8px 16px;
     width: 150px;
     margin-right: 5px;
+    transition: all 0.2s linear ;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.buttonGrau:hover{
+    background: var(--lilac);
+    color: white;
+    transition: all 0.2s linear ;
 }
 
 .startKongress {
@@ -173,14 +241,15 @@ header {
 }
 
 .bilder, .bilder2, .bilder3{
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     height: 250px;
     background-size: cover;
     margin-bottom: 20px;
     transition: filter 1s ease-in;
     position: relative;
-    filter: brightness(1)
-
+    filter: brightness(1);
+    border-radius: 4px;
 }
 
 .bilder::after, .bilder2, .bilder3{
@@ -216,6 +285,20 @@ header {
     margin-top: 30px;
     max-width: 1200px;
     align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .gridCompLogo {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .gridCompLogo {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
 }
 
 .gridZeitplann {
@@ -267,19 +350,30 @@ header {
     color: var(--secondary);
 }
 
+.BekannteReferenten  p{
+    max-width: 700px;
+}
+
+@media screen and (max-width: 1200px) {
+    .BekannteReferenten  p{
+        max-width: 100%;
+    } 
+    
+}
 .gridRef {
     display: grid;
-    grid-template-columns: repeat(2, 550px);
+    grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
     max-width: 1200px;
 }
 
 .gridRefItem {
-    width: 100%;
+    /* width: 100%; */
 }
 
 .gridRefItemPic {
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     position: relative;
     top: -64px;
     left: -80px;
@@ -287,7 +381,8 @@ header {
 
 .gridRefItemPicBack {
     background-color: #c6bbf3;
-    width: 550px;
+    width: 100%;
+    max-width: 550px;
     height: 160px;
     border-radius: 16px;
 }
@@ -348,14 +443,26 @@ header {
 
 .gridTeilnehmer {
     display: grid;
-    grid-template-columns: repeat(4, 250px);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
     max-width: 1200px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .gridTeilnehmer {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.gridTeilnehmerItem{
+    display: grid;
 }
 
 .gridTeilnehmerItemPic {
-    width: 250px;
-    height: 250px;
+    max-width: 250px;
+    width: 100%;
+    /* height: 250px; */
     border-radius: 16px;
     background: #c6bbf3;
     margin-bottom: 15px;
@@ -394,16 +501,33 @@ header {
 
 .gridTalks {
     display: grid;
-    grid-template-columns: repeat(3, 350px);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-gap: 50px;
     max-width: 1200px;
     margin: auto;
-    grid-template-rows: 370px 370px;
+    grid-template-rows: repeat(2, 370px);
+}
 
+@media screen and (max-width: 1200px) {
+    .gridTalks {
+        gap: 20px 30px;
+        margin: 8px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: repeat(3, 310px);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .gridTalks {
+        gap: 20px 30px;
+        margin: 8px;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-template-rows: repeat(6, 300px);
+    }
 }
 
 .gridTalksItem {
-    width: 290px;
+    width: 100%;
     height: auto;
     min-height: 290px;
     background: rgba(255, 255, 255, 0);
@@ -433,13 +557,14 @@ header {
 
 .gridTalksItemYear {
     display: inline-block;
-    font-size: 16px;
-    font-weight: 700;
-    background: var(--primary);
+    font-size: 12px;
+    font-weight: 400;
+    background: var(--pinkish);
     color: #fff;
     text-align: left;
-    border-radius: 16px;
+    border-radius: 46px;
     padding: 10px 15px;
+    cursor: default;
 }
 
 .gridTalksItemHeadline {
@@ -487,24 +612,21 @@ header {
 .gridTalksHeadItemRead {
     font-size: 16px;
     font-style: normal;
-    font-weight: 900;
     text-align: left;
     margin-top: 25px;
-    padding: 15px 25px;
-    background-color: var(--primary);
-    border-radius: 10px;
     display: inline-block;
     cursor: pointer;
     color: #fff;
 }
 
 .gridStimmen {
-    display: grid;
-    grid-template-columns: repeat(3, 350px);
-    grid-gap: 50px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
     max-width: 1200px;
     margin: auto;
     margin-top: 50px;
+    justify-content: center;
 }
 
 .gridStimmenItem {
@@ -577,7 +699,8 @@ header {
 
 .anmeldung {
     margin: auto;
-    width: 1200px;
+    width: 95%;
+    max-width: 1200px;
     height: 445.837px;
     background-color: var(--primary);
     border-radius: 16px;
@@ -720,6 +843,12 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 24px;
     margin: 32px auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .program .topic-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }  
 }
 
 .topic-grid .topic{
@@ -983,4 +1112,45 @@ h2{
     background: linear-gradient(0deg, #25233075, transparent);
     width: 100vw;
     height: 61px;
+  }
+
+  section.explanation h1{
+    font-size: 40px;
+    line-height: 48px;
+    max-width: 800px;
+    text-align: center;
+    color: var(--secondary)
+  }
+
+  section.explanation h2{
+    color: var(--text);
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: -10px;
+  }
+
+  section.explanation {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 100px;
+  }
+
+  section.explanation p {
+    max-width: 800px;
+  }
+
+  section.explanation a{
+    text-decoration: underline;
+    font-weight: 500;
+    color: var(--primary)
+  }
+
+  section.explanation a:hover{
+    color: var(--lilac)
   }
